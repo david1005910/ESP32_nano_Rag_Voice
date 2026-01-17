@@ -1,0 +1,38 @@
+# =====================================
+# Voice RAG Server - Python 패키지
+# =====================================
+# 
+# 설치: pip install -r requirements.txt
+#
+
+# 웹 서버
+flask>=2.3.0
+
+# 음성 인식 (STT)
+openai-whisper>=20231117
+
+# 음성 합성 (TTS)
+edge-tts>=6.1.0
+pydub>=0.25.0
+
+# RAG / AI
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# HTTP 요청
+requests>=2.28.0
+
+# PyTorch (Whisper 의존)
+torch>=2.0.0
+
+# =====================================
+# 추가 설치 필요 (pip 외)
+# =====================================
+# 
+# 1. ffmpeg (pydub 의존):
+#    sudo apt install ffmpeg
+#
+# 2. Ollama:
+#    curl -fsSL https://ollama.com/install.sh | sh
+#    ollama pull llama3.2
+#
